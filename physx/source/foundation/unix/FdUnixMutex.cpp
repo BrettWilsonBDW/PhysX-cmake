@@ -26,6 +26,8 @@
 // Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
 // Copyright (c) 2001-2004 NovodeX AG. All rights reserved.
 
+#if !NO_UNIX
+
 #include "foundation/PxAssert.h"
 #include "foundation/PxErrorCallback.h"
 #include "foundation/PxUserAllocated.h"
@@ -197,3 +199,5 @@ void PxReadWriteLock::unlockWriter()
 }
 
 } // namespace physx
+
+#endif

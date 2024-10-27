@@ -26,6 +26,8 @@
 // Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
 // Copyright (c) 2001-2004 NovodeX AG. All rights reserved.
 
+#if !NO_UNIX
+
 #include "foundation/PxString.h"
 #include <stdio.h>
 
@@ -38,3 +40,5 @@ void PxPrintString(const char* str)
 }
 
 } // namespace physx
+
+#endif

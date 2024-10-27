@@ -25,6 +25,8 @@
 // Copyright (c) 2008-2024 NVIDIA Corporation. All rights reserved.
 // Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
 // Copyright (c) 2001-2004 NovodeX AG. All rights reserved.
+#if !NO_UNIX
+
 #include "foundation/PxFPU.h"
 
 #if !defined(__CYGWIN__)
@@ -105,3 +107,5 @@ PX_FOUNDATION_API void physx::PxDisableFPExceptions()
 	_mm_setcsr(control | _MM_MASK_MASK);
 #endif
 }
+
+#endif

@@ -26,6 +26,8 @@
 // Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
 // Copyright (c) 2001-2004 NovodeX AG. All rights reserved.
 
+#if !NO_UNIX
+
 #include "foundation/PxAtomic.h"
 
 #if ! PX_EMSCRIPTEN
@@ -149,3 +151,5 @@ PxI64 PxAtomicExchange(volatile PxI64* val, PxI64 val2)
 }
 
 } // namespace physx
+
+#endif

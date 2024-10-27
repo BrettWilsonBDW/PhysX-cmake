@@ -26,6 +26,8 @@
 // Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
 // Copyright (c) 2001-2004 NovodeX AG. All rights reserved.
 
+#if !NO_UNIX
+
 #include "foundation/PxAllocator.h"
 #include "foundation/PxAtomic.h"
 #include "foundation/PxSList.h"
@@ -150,3 +152,5 @@ uint32_t PxSListImpl::getSize()
 }
 
 } // namespace physx
+
+#endif
