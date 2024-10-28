@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.22)
 # Get project name from directory
 # get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_LIST_DIR} NAME)
 
-set(PROJECT_NAME "physx-cmake")
+set(PROJECT_NAME "physx")
 
 # Define project with C++ language
 project(${PROJECT_NAME} LANGUAGES CXX)
