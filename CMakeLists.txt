@@ -25,13 +25,13 @@ include_directories(${CMAKE_CURRENT_LIST_DIR}/physx/include)
 
 # Recursively collect PhysX source include directories
 file(GLOB_RECURSE MY_INCLUDE_DIRS LIST_DIRECTORIES true
-  ${CMAKE_CURRENT_LIST_DIR}/physx/source/*)
+  ${CMAKE_CURRENT_LIST_DIR}/physx/src/*)
 include_directories(${MY_INCLUDE_DIRS})
 
 # Collect PhysX source files
 file(GLOB_RECURSE MY_LIBRARY_SOURCES
-  ${CMAKE_CURRENT_LIST_DIR}/physx/source/*.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/physx/source/*.h
+  ${CMAKE_CURRENT_LIST_DIR}/physx/src/*.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/physx/src/*.h
 )
 
 set(CMAKE_PDB_OUTPUT_DIRECTORY "")
