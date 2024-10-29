@@ -7,7 +7,7 @@
 include(FetchContent)
 FetchContent_Declare(physx}
   GIT_REPOSITORY https://github.com/BrettWilsonBDW/PhysX-cmake.git
-  GIT_TAG head
+  GIT_TAG PhysX-web
   GIT_SHALLOW    TRUE
   GIT_PROGRESS   TRUE
 )
