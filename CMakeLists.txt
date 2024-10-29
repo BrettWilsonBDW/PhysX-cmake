@@ -3,8 +3,7 @@ cmake_minimum_required(VERSION 3.22)
 set(PROJECT_NAME "physx")
 
 # Define project with C++ language
-# project(${PROJECT_NAME} LANGUAGES CXX)
-project(${PROJECT_NAME})
+project(${PROJECT_NAME} LANGUAGES CXX)
 
 option(USE_UNIX "" OFF)
 
@@ -27,7 +26,6 @@ add_definitions(-DPX_EMSCRIPTEN)
 # Include PhysX header directories
 include_directories(${CMAKE_CURRENT_LIST_DIR}/physx/include)
 
-# ${CMAKE_CURRENT_LIST_DIR}/physx/source/*)
 # Recursively collect PhysX source include directories
 file(GLOB_RECURSE PX_INCLUDE_DIRS LIST_DIRECTORIES true
   ${CMAKE_CURRENT_LIST_DIR}/physx/source/common/*
@@ -35,8 +33,6 @@ file(GLOB_RECURSE PX_INCLUDE_DIRS LIST_DIRECTORIES true
   )
 include_directories(${PX_INCLUDE_DIRS})
 
-# ${CMAKE_CURRENT_LIST_DIR}/physx/source/*.cpp
-# ${CMAKE_CURRENT_LIST_DIR}/physx/source/*.h
 # Collect PhysX source files
 file(GLOB_RECURSE PX_LIBRARY_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/physx/source/common/*.cpp
