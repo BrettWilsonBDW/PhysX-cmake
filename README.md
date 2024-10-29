@@ -1,4 +1,4 @@
-## PhysX with a smiple cmake to be used with fetchcontent
+## PhysX with a simple CMake to be used with FetchContent
 
 ### example use
 
