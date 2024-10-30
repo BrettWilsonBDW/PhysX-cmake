@@ -25,11 +25,13 @@ add_definitions(-DPX_EMSCRIPTEN)
 
 # Include PhysX header directories
 include_directories(${CMAKE_CURRENT_LIST_DIR}/physx/include)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/physx/include/extensions)
 
 # Recursively collect PhysX source include directories
 file(GLOB_RECURSE PX_INCLUDE_DIRS LIST_DIRECTORIES true
   ${CMAKE_CURRENT_LIST_DIR}/physx/source/common/*
   ${CMAKE_CURRENT_LIST_DIR}/physx/source/foundation/*
+  ${CMAKE_CURRENT_LIST_DIR}/physx/source/physx/*
   )
 include_directories(${PX_INCLUDE_DIRS})
 
